@@ -1,33 +1,37 @@
-Identifier: eos0aaa
-Slug: template-model
+Identifier: eos69jj
+Slug: neisseria-gonorrhoeae-activity
 Status: In progress
-Title: This is a template model
-Description: |
-  This is a description of the template model.
-  You can use multiple lines in this description.
+Title: N.gonorrhoeae antimicrobial activity
+Description: Deep learning ML model trained on an in-house collection of two 
+  libraries, 1755 clinically approved drugs and  an internal small molecule 
+  library of 37K compounds. Experimental conditions include a duplicate test at 
+  50uM final concentration on N.gonorrohoeae ATCC49226 (susceptible strain). The
+  model has been used to prospectively screen 5M compounds identifying 58 
+  compounds with activity against the WT strain, of which 22 had good chemical 
+  properties (no nitro group) and 8 showed activity in MDR strains.
 Deployment:
   - Local
   - Online
 Source: Local, Online
 Source Type: Internal, Replicated, External
 Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection, Similarity search, Generation
-Input: 
+Subtask: Property calculation or prediction, Activity prediction, Featurization,
+  Projection, Similarity search, Generation
+Input:
   - Compound
 Input Dimension: 1
-Output: 
+Output:
   - Value
   - Score
   - Compound
   - Text
 Output Dimension: 1
 Output Consistency: Fixed, Variable
-Interpretation: |
-  The output of this template model should be interpreted like this.
+Interpretation: The output of this template model should be interpreted like 
+  this.
 Tag:
-  - Tag 1
-  - Tag 2
-  - Tag 3
+  - Antimicrobial activity
+  - Gram-negative bacteria
 Biomedical Area:
   - Biomedical Area 1
   - Biomedical Area 2
@@ -36,6 +40,7 @@ Target Organism:
   - Target Organism 2
 Publication Type: Peer reviewed, Preprint, Other
 Publication Year: 2026
-Publication: https://example.com
-Source Code: https://example.com
-License: GPL-3.0-or-later, MIT, Apache-2.0...
+Publication: https://www.doi.org/10.1126/scitranslmed.ads4699
+Source Code: https://github.com/jackievaleri/ngonorrhoeae_abx_ml_discovery
+License: MIT
+Contributor: GemmaTuron

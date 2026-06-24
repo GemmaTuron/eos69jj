@@ -11,36 +11,30 @@ Description: Deep learning ML model trained on an in-house collection of two
   properties (no nitro group) and 8 showed activity in MDR strains.
 Deployment:
   - Local
-  - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Annotation
+Subtask: Activity prediction
 Input:
   - Compound
 Input Dimension: 1
 Output:
-  - Value
   - Score
-  - Compound
-  - Text
 Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: The output of this template model should be interpreted like 
-  this.
+Output Consistency: Fixed
+Interpretation: Higher score indicates greater predicted probability of growth inhibition against Neisseria gonorrhoeae.
 Tag:
   - Antimicrobial activity
   - Gram-negative bacteria
+  - Chemical graph model
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - Gonorrhea
+  - Antimicrobial resistance
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+  - Neisseria gonorrhoeae
+Publication Type: Peer reviewed
 Publication Year: 2026
-Publication: https://www.doi.org/10.1126/scitranslmed.ads4699
+Publication: https://doi.org/10.1126/scitranslmed.ads4699
 Source Code: https://github.com/jackievaleri/ngonorrhoeae_abx_ml_discovery
 License: MIT
 Contributor: GemmaTuron

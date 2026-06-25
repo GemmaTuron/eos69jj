@@ -1,10 +1,13 @@
 # N. gonorrhoeae antibiotic activity predictor (Chemprop D-MPNN ensemble).
 #
 # Source model: jackievaleri/ngonorrhoeae_abx_ml_discovery (Anahtar et al.,
-# Sci. Transl. Med. 2026, scitranslmed.ads4699). This wraps the "Round 1"
-# PK+37K model (FINALbayHO04052022) used for the paper's 5.3M-compound
-# commercial screen: a 50-checkpoint ensemble (5 folds x 10 models) trained
-# with Chemprop v1.5.1 on RDKit-2D-normalized features and --no_features_scaling.
+# Sci. Transl. Med. 2026, scitranslmed.ads4699). This wraps the "Round 2"
+# model (FINALbayHO11152022), trained on Pharmakon + Internal-37K + the first
+# round of experimental validation hits. It is the authors' designated
+# quick-start model and the one that surfaced compound A1, which was tested in
+# the in vivo mouse vaginal infection model. It is a 50-checkpoint ensemble
+# (5 folds x 10 models) trained with Chemprop v1.5.1 on RDKit-2D-normalized
+# features and --no_features_scaling.
 #
 # Checkpoints are NOT committed to git. They live under ../../checkpoints/
 # (fold_*/model_*/model.pt) and are fetched at runtime from S3 via eosvc.
